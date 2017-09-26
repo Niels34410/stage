@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('../css/style.css') }}" />
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <header>
+        <div id="nav-left">
+            <ul>
+                <li><a href="#"><img src="../img/logo-123meuble.jpg" alt="123meuble" title="123meuble.com"></a></li>
+                <li><img src="../img/telephone.jpg" alt="Téléphone"></li>
+            </ul>
+        </div>
+        <div id="nav-right">
+            <ul>
+                <li><a href="#">Mon panier</a></li>
+                <li><a href="#">Mon espace client</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Commande papier</a></li>
+                <li><a href="#">Aide</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+      </header>
+        {% block body %}{% endblock %}
+      <footer>
+        <!--Services-->
+        <div id="services">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-livraison-personnalisee.jpg" alt="Livraison personnalisée">
+                        </div>
+                        Livraison personnalisée
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-paiement-3x-sans-frais.jpg" alt="Paiement 3 fois sans frais" title="Paiement 3 fois sans frais">
+                        </div>
+                        Paiement 3 fois sans frais
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-qualite-marques.jpg" alt="La qualité des grandes marques" title="La qualité des grandes marques">
+                        </div>
+                        La qualité des grandes marques
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-sav.jpg" alt="Garanties et Services après vente" title="Garanties et Services après vente">
+                        </div>
+                        Garanties et Services après vente
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-professionnels-conseils.jpg" alt="Nos professionnels vous conseillent" title="Nos professionnels vous conseillent">
+                        </div>
+                    Nos professionnels vous conseillent
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-paiement-securite.jpg" alt="Payez en toute sécurité" title="Payez en toute sécurité">
+                        </div>
+                    Payez en toute sécurité
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../img/logo-mobilier-sur-mesure.jpg" alt="Votre mobilier sur mesure" title="Votre mobilier sur mesure">
+                        </div>
+                    Votre mobilier sur mesure
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="clear"></div>
+        <!--Liens bas de page-->
+        <img id="footer-123meuble" src="../img/123meuble-footer.jpg">
+        <div id="bottom-links">
+            <ul>
+                <li>
+                    <ul>
+                        <span>Informations sur la société<br></span>
+                        <li>
+                            <ul>
+                                <li><a href="#">123meuble au fil du temps</a></li>
+                                <li><a href="#">Conditions générales de vente</a></li>
+                                <li><a href="#">Tissus au mètre</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Offres d'emplois</a></li>
+                                <li><a href="#">Presse</a></li>
+                                <li><a href="#">À propos de nous</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul style="margin-left: 60px;">
+                        <span>Nos partenaires<br></span>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="clear"></div>
+        <!--Copyright-->
+        <div id="copyright">
+            <a href="#">
+                <div id="paiements">
+                    <img src="../img/paiement-securite.jpg">
+                </div>
+            </a>
+            <div id="copy">
+                La Demeure Des Siècles / 123meuble &#9400; 2017 - tous droits réservés
+            </div>
+        </div>
+    </footer>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    {% block javascripts %}{% endblock %}
+  </body>
+</html>

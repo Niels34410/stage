@@ -1,0 +1,34 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+<div id="clear"></div>
+<div id="article">
+  <div id="titre-gamme-article">
+    <div class="nom-gamme">Nom de la gamme</div>
+    <div class="nom-article">Nom de l'article</div>
+  </div>
+  <div id="description-fiche-article">
+    <div id="description-article">
+      Description de l'article
+      <form action="panier.php">
+        <div class="quantite-article">
+        <select name="qte">
+          <option>1</option>
+        </select>
+        </div>
+        <div class="ajout-panier">
+          <button>Ajouter au panier</button>
+        </div>
+      </form>
+    </div>
+    <div id="image-article">
+      <img src="../img/image-produit.jpg" alt="Image de l'article">
+    </div>
+    <div id="prix-article">
+      0.00 euros
+    </div>
+  </div>
+</div>
+<div id="clear"></div>
+{% endblock %}
